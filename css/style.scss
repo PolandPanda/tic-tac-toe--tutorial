@@ -3,3 +3,24 @@
     margin:0;
     padding: 0;
 }
+
+.box {
+    width: 306px;
+    background-color: #f0f0f0;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,100px);
+    grid-gap: 3px;
+    display: grid;
+    cursor: pointer;
+    div {
+        display: flex;
+        background-color: #fff;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        color: #222;
+        &:hover {
+            background-color: #fafafa;
+        }
+    }
+}
